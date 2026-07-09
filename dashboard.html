@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dashboard | AI Website Analyzer</title>
+<link rel="stylesheet" href="dashboard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<aside class="sidebar">
+<h2>🤖 AI Analyzer</h2>
+<a href="dashboard.html"><i class="fa fa-chart-line"></i> Dashboard</a>
+<a href="#"><i class="fa fa-globe"></i> Reports</a>
+<a href="#"><i class="fa fa-star"></i> Favorites</a>
+<a href="#"><i class="fa fa-user"></i> Profile</a>
+<a href="index.html"><i class="fa fa-right-from-bracket"></i> Logout</a>
+</aside>
+
+<main class="main">
+<header class="topbar">
+<h1>Welcome, Akram 👋</h1>
+</header>
+
+<section class="analyze">
+<input id="url" type="url" placeholder="https://example.com">
+<button id="analyzeBtn">Analyze Website</button>
+</section>
+
+<section class="cards">
+<div class="card"><h3>Performance</h3><h2 id="perf">--</h2></div>
+<div class="card"><h3>SEO</h3><h2 id="seo">--</h2></div>
+<div class="card"><h3>Accessibility</h3><h2 id="acc">--</h2></div>
+<div class="card"><h3>Best Practices</h3><h2 id="best">--</h2></div>
+</section>
+
+<section class="history">
+<h2>Recent Reports</h2>
+<table>
+<tr><th>Website</th><th>Status</th></tr>
+<tr><td>example.com</td><td>Completed</td></tr>
+</table>
+</section>
+</main>
+<script src="dashboard.js"></script>
+</body>
+</html>
