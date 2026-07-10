@@ -34,3 +34,289 @@ footer{text-align:center;padding:30px;background:#050b15;color:#94a3b8}
 .hero-card{width:100%}
 .stats{justify-content:center;flex-wrap:wrap}
 }
+
+
+/* =====================================
+        RESPONSIVE DESIGN
+===================================== */
+
+/* Tablet */
+
+@media screen and (max-width:992px){
+
+nav{
+
+padding:18px 30px;
+flex-wrap:wrap;
+
+}
+
+nav ul{
+
+gap:18px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.hero{
+
+flex-direction:column-reverse;
+text-align:center;
+padding:60px 30px;
+
+}
+
+.hero-left,
+.hero-right{
+
+width:100%;
+
+}
+
+.hero-left p{
+
+max-width:100%;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.image-circle{
+
+width:300px;
+height:300px;
+
+}
+
+.contact-content{
+
+flex-direction:column;
+
+}
+
+.projects{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.skills{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width:768px){
+
+body{
+
+overflow-x:hidden;
+
+}
+
+nav{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+nav ul{
+
+width:100%;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+
+}
+
+.hero{
+
+padding:50px 20px;
+
+}
+
+.hero-left h1{
+
+font-size:42px;
+
+}
+
+.hero-left h2{
+
+font-size:22px;
+
+}
+
+.hero-left h3{
+
+font-size:20px;
+
+}
+
+.hero-left p{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-buttons a{
+
+width:100%;
+
+}
+
+.image-circle{
+
+width:230px;
+height:230px;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.projects{
+
+grid-template-columns:1fr;
+
+}
+
+.skills{
+
+grid-template-columns:1fr;
+
+}
+
+.contact{
+
+padding:70px 20px;
+
+}
+
+.contact-content{
+
+flex-direction:column;
+
+}
+
+.contact-form,
+.contact-info{
+
+width:100%;
+
+}
+
+.testimonial-slider{
+
+padding:30px 20px;
+
+}
+
+.client{
+
+flex-direction:column;
+
+}
+
+footer{
+
+padding:20px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media screen and (max-width:480px){
+
+.hero-left h1{
+
+font-size:34px;
+
+}
+
+.hero-left h2{
+
+font-size:18px;
+
+}
+
+.hero-left p{
+
+font-size:15px;
+
+}
+
+.image-circle{
+
+width:180px;
+height:180px;
+
+}
+
+.section-title{
+
+font-size:26px;
+
+}
+
+.skill{
+
+padding:18px;
+
+}
+
+.project-card img{
+
+height:180px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+font-size:14px;
+
+}
+
+.contact-form button{
+
+font-size:15px;
+
+}
+
+.social-icons a{
+
+width:45px;
+height:45px;
+font-size:18px;
+
+}
+
+}
+
+
+
+
