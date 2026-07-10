@@ -366,3 +366,145 @@ font-size:28px;
     font-size:14px;
     margin:10px 0 20px;
 }
+
+/* =====================================
+        RESPONSIVE AUTH
+===================================== */
+
+@media screen and (max-width:768px){
+
+.auth-container{
+
+padding:20px;
+
+}
+
+.auth-card{
+
+width:100%;
+max-width:420px;
+
+padding:30px 22px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+.auth-card h1{
+
+font-size:28px;
+
+}
+
+.input-box{
+
+height:52px;
+
+}
+
+.input-box input{
+
+font-size:15px;
+
+}
+
+.login-btn{
+
+height:52px;
+font-size:16px;
+
+}
+
+.social{
+
+height:50px;
+font-size:15px;
+
+}
+
+}
+
+
+/* Small Mobile */
+
+@media screen and (max-width:480px){
+
+.auth-container{
+
+padding:15px;
+
+}
+
+.auth-card{
+
+padding:25px 18px;
+
+border-radius:18px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.auth-card h1{
+
+font-size:24px;
+
+}
+
+.auth-card p{
+
+font-size:14px;
+
+}
+
+.input-box{
+
+height:48px;
+
+}
+
+.input-box input{
+
+font-size:14px;
+
+padding-left:42px;
+
+}
+
+.input-box i{
+
+left:15px;
+
+}
+
+.login-btn{
+
+height:48px;
+font-size:15px;
+
+}
+
+.social{
+
+height:48px;
+font-size:14px;
+
+}
+
+.signup-link,
+.home-link{
+
+font-size:14px;
+
+}
+
+}
+
