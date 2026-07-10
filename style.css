@@ -1,20 +1,127 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 body{background:linear-gradient(135deg,#08111f,#0f172a,#111827);color:#fff}
 
+/*==========================
+        PREMIUM NAVBAR
+==========================*/
+
 .navbar{
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
-padding:20px 8%;
+
+padding:18px 7%;
+
+background:rgba(8,17,31,.80);
+
+backdrop-filter:blur(20px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 8px 30px rgba(0,0,0,.35);
+
 position:relative;
-background:rgba(0,0,0,.3);
-backdrop-filter:blur(10px);
-transition:.3s;
+
+transition:.4s ease;
+
 }
 
-.navbar ul{display:flex;gap:20px;list-style:none;align-items:center}
-.navbar a{text-decoration:none;color:#fff}
+.logo{
 
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-size:28px;
+
+font-weight:700;
+
+color:#38bdf8;
+
+letter-spacing:1px;
+
+}
+
+.logo i{
+
+font-size:30px;
+
+color:#60a5fa;
+
+}
+
+.navbar ul{
+
+display:flex;
+
+align-items:center;
+
+gap:28px;
+
+list-style:none;
+
+}
+
+.navbar ul li{
+
+list-style:none;
+
+}
+
+.navbar a{
+
+position:relative;
+
+text-decoration:none;
+
+color:#fff;
+
+font-size:16px;
+
+font-weight:500;
+
+transition:.35s;
+
+}
+
+/* Underline Animation */
+
+.navbar a:not(.btn):not(.btn-outline)::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-6px;
+
+width:0;
+
+height:2px;
+
+background:#38bdf8;
+
+transition:.35s;
+
+}
+
+.navbar a:not(.btn):not(.btn-outline):hover{
+
+color:#38bdf8;
+
+}
+
+.navbar a:not(.btn):not(.btn-outline):hover::after{
+
+width:100%;
+
+}
 /* ===========================
    Premium Login Button
 =========================== */
@@ -644,6 +751,34 @@ transform:translateY(0) translateX(0);
 
 }
 
+@media(max-width:768px){
 
+.navbar{
+
+flex-direction:column;
+
+padding:18px;
+
+gap:18px;
+
+}
+
+.navbar ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+}
 
 
