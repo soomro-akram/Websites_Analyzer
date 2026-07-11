@@ -1651,52 +1651,49 @@ transform:translateY(0);
 
 @media (max-width:768px){
 
-    .navbar{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        flex-direction:row;
-        padding:15px 20px;
-        height:70px;
-    }
+.menu-toggle{
+    display:block;
+    font-size:28px;
+    cursor:pointer;
+    color:#38bdf8;
+    z-index:10001;
+}
 
-    .menu-toggle{
-        display:block;
-    }
-
-    .logo{
-        font-size:22px;
-    }
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:row !important;
+    height:70px;
+    padding:0 20px;
+}
 
 .nav-links{
     position:fixed;
     top:0;
-    left:-280px;
+    left:-100%;
     width:280px;
     height:100vh;
     background:#08111f;
-
     display:flex;
     flex-direction:column;
+    justify-content:flex-start;
     align-items:flex-start;
-
-    padding:90px 25px 25px;
-    gap:20px;
-
-    transition:.35s ease;
-    z-index:10000;
+    padding:90px 25px;
+    gap:25px;
+    transition:left .35s ease;
+    z-index:9999;
 }
 
 .nav-links.active{
     left:0;
 }
 
-    .nav-links li{
-        width:100%;
-    }
-
-    .nav-links a{
-        font-size:18px;
-    }
+.nav-links li{
+    width:100%;
 }
 
+.nav-links a{
+    font-size:18px;
+}
+}
