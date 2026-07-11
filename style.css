@@ -231,7 +231,7 @@ section h2{text-align:center;margin-bottom:40px;color:#38bdf8}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
 
 #features h2{
-    font-size: px30;
+    font-size: 30px;
     font-weight: 700;
 }
 
