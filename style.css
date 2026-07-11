@@ -886,6 +886,8 @@ font-size:24px;
     margin: 12px 0;
 }
 
+.price-card:hover{ transform:translateY(-12px); box-shadow:0 20px 45px rgba(56,189,248,.35); }
+
 .price-btn{
     padding: 12px 28px;
     font-size: 16px;
