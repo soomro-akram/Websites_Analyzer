@@ -6,27 +6,21 @@ body{background:linear-gradient(135deg,#08111f,#0f172a,#111827);color:#fff}
 ==========================*/
 
 .navbar{
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 padding:18px 7%;
-
-background:rgba(8,17,31,.80);
-
-backdrop-filter:blur(20px);
-
+background:#08111f;
 border-bottom:1px solid rgba(255,255,255,.08);
+box-shadow:0 8px 30px rgba(0,0,0,.4);
 
-box-shadow:0 8px 30px rgba(0,0,0,.35);
+position:fixed;
+top:0;
+left:0;
 
-position:relative;
+width:100%;
 
-transition:.4s ease;
-
+z-index:9999;
 }
 
 .logo{
@@ -1684,6 +1678,56 @@ transform:translateY(0);
 
 .nav-links a{
     font-size:20px;
+}
+
+}
+
+.left-nav{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:#38bdf8;
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+
+position:fixed;
+
+top:0;
+left:-100%;
+
+width:280px;
+height:100vh;
+
+background:#08111f;
+
+display:flex;
+flex-direction:column;
+
+padding-top:100px;
+
+gap:25px;
+
+transition:.4s;
+
+z-index:9998;
+
+}
+
+.nav-links.active{
+left:0;
 }
 
 }
