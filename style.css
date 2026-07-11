@@ -801,9 +801,10 @@ font-size:24px;
 =========================*/
 
 .pricing{
-
+font-size:48px;
 padding:100px 8%;
-
+color:#38bdf8;
+    margin-bottom:30px;
 text-align:center;
 
 }
@@ -814,7 +815,7 @@ color:#cbd5e1;
 
 margin-bottom:50px;
 
-font-size:18px;
+font-size:40px;
 
 }
 
