@@ -892,6 +892,7 @@ font-size:24px;
 
 .popular{
     transform: scale(1.02);
+    border:2px solid #38bdf8;
 }
 .badge{
 
