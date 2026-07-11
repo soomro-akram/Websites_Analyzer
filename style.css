@@ -888,11 +888,7 @@ font-size:24px;
 
 .price-card:hover{ transform:translateY(-12px); box-shadow:0 20px 45px rgba(56,189,248,.35); }
 
-.price-btn{
-    padding: 12px 28px;
-    font-size: 16px;
-    border-radius: 40px;
-}
+.price-btn{ display:inline-block; margin-top:15px; padding:14px 35px; border-radius:50px; background:linear-gradient(135deg,#38bdf8,#2563eb); color:#fff; text-decoration:none; font-weight:600; transition:.35s; } .price-btn:hover{ transform:scale(1.05); }
 
 .popular{
     transform: scale(1.02);
