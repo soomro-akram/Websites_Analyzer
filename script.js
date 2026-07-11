@@ -269,11 +269,20 @@ function random(min, max) {
 
 }
 
-
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const menuIcon = menuToggle.querySelector("i");
 
 menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
 
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-times");
+    }else{
+        menuIcon.classList.remove("fa-times");
+        menuIcon.classList.add("fa-bars");
+    }
+
+});
