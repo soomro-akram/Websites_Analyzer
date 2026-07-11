@@ -1,6 +1,8 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
 body{background:linear-gradient(135deg,#08111f,#0f172a,#111827);color:#fff}
-
+body{
+padding-top:90px;
+}
 /*==========================
         PREMIUM NAVBAR
 ==========================*/
