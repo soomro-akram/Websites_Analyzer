@@ -288,10 +288,16 @@ menuToggle.addEventListener("click", () => {
 });
 
 const form = document.getElementById("contactForm");
+const button = document.querySelector(".send-btn");
+const buttonText = document.querySelector(".btn-text");
+const plane = document.querySelector(".plane");
 
 form.addEventListener("submit", async function (e) {
 
     e.preventDefault();
+
+    button.classList.add("sending");
+    buttonText.innerHTML = "Sending...";
 
     const data = new FormData(form);
 
@@ -303,30 +309,37 @@ form.addEventListener("submit", async function (e) {
         }
     });
 
-    if (response.ok) {
+    setTimeout(() => {
 
-        Swal.fire({
-            icon: "success",
-            title: "Message Sent!",
-            text: "Thank you for contacting me. I will get back to you soon.",
-            background: "#08111f",
-            color: "#fff",
-            confirmButtonColor: "#38bdf8"
-        });
+        if (response.ok) {
 
-        form.reset();
+            Swal.fire({
+                icon: "success",
+                title: "Message Sent!",
+                text: "Thank you for contacting me. I will get back to you soon.",
+                background: "#08111f",
+                color: "#fff",
+                confirmButtonColor: "#38bdf8"
+            });
 
-    } else {
+            form.reset();
 
-        Swal.fire({
-            icon: "error",
-            title: "Failed!",
-            text: "Something went wrong. Please try again.",
-            background: "#08111f",
-            color: "#fff",
-            confirmButtonColor: "#ef4444"
-        });
+        } else {
 
-    }
+            Swal.fire({
+                icon: "error",
+                title: "Failed!",
+                text: "Something went wrong. Please try again.",
+                background: "#08111f",
+                color: "#fff",
+                confirmButtonColor: "#ef4444"
+            });
+
+        }
+
+        button.classList.remove("sending");
+        buttonText.innerHTML = "Send Message";
+
+    }, 1200);
 
 });
