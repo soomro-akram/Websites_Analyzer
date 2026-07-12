@@ -286,3 +286,47 @@ menuToggle.addEventListener("click", () => {
     }
 
 });
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function (e) {
+
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            Accept: "application/json"
+        }
+    });
+
+    if (response.ok) {
+
+        Swal.fire({
+            icon: "success",
+            title: "Message Sent!",
+            text: "Thank you for contacting me. I will get back to you soon.",
+            background: "#08111f",
+            color: "#fff",
+            confirmButtonColor: "#38bdf8"
+        });
+
+        form.reset();
+
+    } else {
+
+        Swal.fire({
+            icon: "error",
+            title: "Failed!",
+            text: "Something went wrong. Please try again.",
+            background: "#08111f",
+            color: "#fff",
+            confirmButtonColor: "#ef4444"
+        });
+
+    }
+
+});
