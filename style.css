@@ -1697,3 +1697,67 @@ transform:translateY(0);
     font-size:18px;
 }
 }
+.send-btn{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    overflow:hidden;
+}
+
+.plane{
+    transition:.6s ease;
+}
+
+.send-btn.sending{
+
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+
+    pointer-events:none;
+
+}
+
+.send-btn.sending .btn-text{
+
+    opacity:.6;
+
+}
+
+.send-btn.sending .plane{
+
+    animation:flyPlane 1.2s ease forwards;
+
+}
+
+@keyframes flyPlane{
+
+0%{
+
+transform:translate(0,0) rotate(0deg);
+
+opacity:1;
+
+}
+
+25%{
+
+transform:translate(8px,-5px) rotate(-15deg);
+
+}
+
+50%{
+
+transform:translate(20px,-18px) rotate(-25deg);
+
+}
+
+100%{
+
+transform:translate(170px,-120px) rotate(-35deg);
+
+opacity:0;
+
+}
+
+}
